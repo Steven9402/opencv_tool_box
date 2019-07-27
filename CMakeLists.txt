@@ -3,6 +3,6 @@ project(opencv_tool_box)
 find_package(OpenCV REQUIRED)
 
 add_subdirectory(utils)
-include_directories(utils/tranform)
+include_directories(utils)
 
 add_subdirectory(examples)

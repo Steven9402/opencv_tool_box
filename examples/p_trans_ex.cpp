@@ -1,8 +1,6 @@
-#include  "transformer.h"
+#include  "transform/transformer.h"
 
-#include<opencv2/xfeatures2d.hpp>
 using namespace cv;
-using namespace xfeatures2d;
 using namespace std;
 
 vector<Point2f> srcTri(4);
@@ -35,7 +33,7 @@ void onMouse(int event, int x, int y, int flags, void *utsc) {
 
 int main(int argc, char* argv[]) {
   
-  src = imread("../../images/src_img.jpg");
+  src = imread("./images/src_img.jpg");
   namedWindow("src", CV_WINDOW_AUTOSIZE);
   imshow("src", src);	
   setMouseCallback("src", onMouse);
